@@ -58,11 +58,13 @@ $mysqlDb = $factory->createDb();
 //$temp = $db->test('freya');
 //var_dump($temp);
 
-//注册模式：对象第一次实例之后注册到全局书上，以后就可以在项目的任何地方直接使用注册方法调用不需要在实例化
+//注册模式：对象第一次实例之后注册到全局树上，以后就可以在项目的任何地方直接使用注册方法调用不需要在实例化
 //$mysqlDb2 = \Common\Register::get('db1');
 //if($mysqlDb === $mysqlDb2){
 //    echo 111;
 //}else{
 //    echo 222;
 //}
+
+//观察者模式
 
