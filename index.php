@@ -44,8 +44,8 @@ $db->where("id=1")->order("id asc")->limit('1');*/
 
 
 //工厂模式：开放两个接口，一个是Factory创建数据库，一个是Db链接数据库
-$factory = new \Common\MysqlFactory();
-$mysqlDb = $factory->createDb();
+//$factory = new \Common\MysqlFactory();
+//$mysqlDb = $factory->createDb();
 //echo $mysqlDb->connect();
 //
 //$factory = new \Common\MysqliFactory();
@@ -67,4 +67,17 @@ $mysqlDb = $factory->createDb();
 //}
 
 //观察者模式
+//比如我们平时开发添加课程成功之后还要处理一连串别的表的更新或者添加操作逻辑。当处理的逻辑增多的时候就很难维护。
+//观察者模式实现低耦合，当一个对象发生改变，一来它的对象全部会受到通知，并自动更新
+//
+//$event = new \Common\Event();
+//$observer1 = new \Common\Observer1();
+//$event->addObserver($observer1);
+//$event->trigger();
 
+//职责链模式
+//实例完成举报功能,每个对象存储着上一级的引用，自己处理不了就交给上一级处理
+
+
+
+//策略模式，跟工厂模式很相近
