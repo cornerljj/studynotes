@@ -77,7 +77,9 @@ $db->where("id=1")->order("id asc")->limit('1');*/
 
 //职责链模式
 //实例完成举报功能,每个对象存储着上一级的引用，自己处理不了就交给上一级处理
-
+//$group = new \Common\Responsibility\GroupLeader();
+//$ret = $group->handle(3);
+//var_dump($ret);
 
 
 //策略模式，跟工厂模式很相近
