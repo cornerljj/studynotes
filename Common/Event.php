@@ -9,7 +9,7 @@
  class Event extends EventGenerator {
 
  	function trigger(){
- 		echo "Event1<br/>\n";
+ 		echo "Evesssnt1<br/>\n";
  		$this->notify();
     }
 
