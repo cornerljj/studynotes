@@ -6,7 +6,8 @@
  * Time: 15:47
  */
 namespace Common;
-//简单工厂模式，如果需要添加多个数据库类型，就需要修改createDb方法，违背了面向对象的开闭原则,扩展是开放的
+//简单工厂模式，如果需要添加多个数据库类型，就需要修改createDb方法，
+//违背了面向对象的开闭原则,扩展是开放的
 //class Factory{
 //    public static function createDb($type){
 //        if($type == 'mysql'){
